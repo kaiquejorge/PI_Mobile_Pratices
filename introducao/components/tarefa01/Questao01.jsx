@@ -1,15 +1,29 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState } from 'react'
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
+import Questao02 from './Questao02';
 
 const Questao01 = () =>  {
-  // Defina as informações a serem exibidas
-  const nomeCompleto = 'Seu Nome Completo';
-  const cidadeOrigem = 'Sua Cidade de Origem';
-  const cursoSemestre = 'Seu Curso e Semestre';
+  const [imagemAlternativa, setImagemAlternativa] = useState(false);
+
+  const alternarImagem = () => {
+    setImagemAlternativa(!imagemAlternativa);
+  };
+
+  const nomeCompleto = 'Kaique Jorge';
+  const cidadeOrigem = 'Quixadá/CE';
+  const cursoSemestre = 'Design Digital - *';
 
   return (
     <View style={styles.container}>
+      <TouchableOpacity onPress={alternarImagem}>
+        <Image
+          source={imagemAlternativa ? require('https://musicult.com.br/wp-content/uploads/2023/03/images.jpeg') : require('https://pbs.twimg.com/profile_images/1684592872568279040/Wt3r_6Jj_400x400.jpg')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
       <Text style={styles.heading}>Informações</Text>
+      <Questao02 cor="blue" />
       <Text><Text style={styles.label}>Nome Completo:</Text> <Text style={styles.bold}>{nomeCompleto}</Text></Text>
       <Text><Text style={styles.label}>Cidade de Origem:</Text> {cidadeOrigem}</Text>
       <Text><Text style={[styles.label, styles.redText]}>Curso e Semestre:</Text> {cursoSemestre}</Text>
@@ -23,14 +37,27 @@ const styles = StyleSheet.create({
     backgroundColor: '#C0C0C0',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 16,
+    padding: 18,
+    height: 800,
+    width: 500
+  },
+  image: {
+    width: 150, 
+    height: 150,
+    borderRadius: 75,
+    marginBottom: 16,
   },
   heading: {
     fontSize: 24,
     fontWeight: 'bold',
+    fontFamily: 'courier new'
+  },
+  text: {
+    fontFamily: 'courier new'
   },
   label: {
     fontWeight: 'bold',
+    fontFamily: 'courier new'
   },
   bold: {
     fontWeight: 'bold',
