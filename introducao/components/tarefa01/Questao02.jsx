@@ -3,25 +3,15 @@ import { View, Text, StyleSheet } from 'react-native';
 
 const Questao02 = ({ cor }) => {
 
-  const disciplinasFavoritas = [
-    'Disciplina 1',
-    'Disciplina 2',
-    'Disciplina 3',
-    'Disciplina 4',
-  ];
-
-  return (
-    <View style={styles.container}>
-      <Text style={{ color: cor, fontSize: 18 }}>
-        Suas Disciplinas Favoritas:
-      </Text>
-      {disciplinasFavoritas.map((disciplina, index) => (
-        <Text key={index} style={{ color: cor }}>
-          {disciplina}
-        </Text>
-      ))}
-    </View>
-  );
+        return (
+        <View style={styles.container}>
+            <Text style={{ fontSize: 20, fontWeight: "bold", padding: 20 }}>Disciplinas que curti:</Text>
+            <Text style={{ fontSize: 15, fontWeight: "bold", color: cor }}>Inglês Instrumental I</Text>
+            <Text style={{ fontSize: 15, fontWeight: "bold", color: cor }}>Design e Inovação</Text>
+            <Text style={{ fontSize: 15, fontWeight: "bold", color: cor }}>Engenharia Semiótica</Text>
+            <Text style={{ fontSize: 15, fontWeight: "bold", color: cor }}>Projetos de Interface Web</Text>
+        </View >
+    );
 }
 
 const styles = StyleSheet.create({
@@ -30,6 +20,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center'
   },
 });
 

@@ -1,32 +1,16 @@
-import React, { useState } from 'react'
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 import { useState } from 'react';
-import Questao02 from './Questao02';
 
 const Questao01 = () =>  {
-  const [imagemAlternativa, setImagemAlternativa] = useState(false);
-
-  const alternarImagem = () => {
-    setImagemAlternativa(!imagemAlternativa);
-  };
-
-  const nomeCompleto = 'Kaique Jorge';
-  const cidadeOrigem = 'Quixadá/CE';
-  const cursoSemestre = 'Design Digital - *';
+  const [imagemAlternativa, setImagemAlternativa] = useState(true);
 
   return (
-    <View style={styles.container}>
-      <TouchableOpacity onPress={alternarImagem}>
-        <Image
-          source={imagemAlternativa ? require('https://musicult.com.br/wp-content/uploads/2023/03/images.jpeg') : require('https://pbs.twimg.com/profile_images/1684592872568279040/Wt3r_6Jj_400x400.jpg')}
-          style={styles.image}
-        />
-      </TouchableOpacity>
-      <Text style={styles.heading}>Informações</Text>
-      <Questao02 cor="blue" />
-      <Text><Text style={styles.label}>Nome Completo:</Text> <Text style={styles.bold}>{nomeCompleto}</Text></Text>
-      <Text><Text style={styles.label}>Cidade de Origem:</Text> {cidadeOrigem}</Text>
-      <Text><Text style={[styles.label, styles.redText]}>Curso e Semestre:</Text> {cursoSemestre}</Text>
+    <View>
+            {imagemAlternativa ? <Image source={require('../../assets/kaique.jpg')} style={{ width: 200, height: 200, borderRadius: 100, margin: 25 }} /> : <Image source={require('../../assets/kaique2.jpg')} style={{ width: 200, height: 200, borderRadius: 100, margin: 25 }} />}
+            <Button title="Mudar Imagem" onPress={() => setImagemAlternativa(!imagemAlternativa)} />
+            <Text style={{ fontSize: 20, fontWeight: "bold" }}>Kaique Jorge</Text>
+            <Text style={{ fontSize: 12, fontWeight: "bold" }}>Design Digital - 6° semestre</Text>
+            <Text style={{ fontSize: 12, fontWeight: "bold" }}>Quixadá - CE</Text>
     </View>
   );
 }
@@ -38,7 +22,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 18,
-    height: 800,
+    height: 400,
     width: 500
   },
   image: {
