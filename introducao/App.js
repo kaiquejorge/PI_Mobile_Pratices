@@ -4,15 +4,15 @@ import { StyleSheet, Text, View } from 'react-native';
 //import Cat from './components/03FullName';
 //import Parent from './components/Nested/Parent';
 //import State from './components/04State';
-import Questao01 from './components/tarefa01/Questao01';
-import Questao02 from './components/tarefa01/Questao02';
+//import Questao01 from './components/tarefa01/Questao01';
+//mport Questao02 from './components/tarefa01/Questao02';
+import JuntarFrases from './components/06JuntarFrases';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Questao01 />
-      <Questao02 cor="gray" />
+      <JuntarFrases />
     </View>
   );
 }
@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 100,
   },
   title: {
     fontSize: 80,
