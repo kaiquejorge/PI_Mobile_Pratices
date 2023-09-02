@@ -6,13 +6,14 @@ import { StyleSheet, Text, View } from 'react-native';
 //import State from './components/04State';
 //import Questao01 from './components/tarefa01/Questao01';
 //mport Questao02 from './components/tarefa01/Questao02';
-import JuntarFrases from './components/06JuntarFrases';
+//import JuntarFrases from './components/06JuntarFrases';
+import Calculadora from './components/07Calculadora/07Calculadora';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <JuntarFrases />
+      <Calculadora />
     </View>
   );
 }
