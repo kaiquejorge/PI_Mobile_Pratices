@@ -28,7 +28,11 @@ const estilos = StyleSheet.create({
     width:300,
     justifyContent:"space-evenly",
     marginTop:5,
+  },
+  title: {
+    fontFamily: "Poppins"
   }
+
 })
 
 export default estilos

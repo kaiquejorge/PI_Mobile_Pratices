@@ -32,7 +32,7 @@ const Calculadora = () => {
 
   return (
     <View style={[estilos.container]}>
-          <Text style={estilos.header}>CALCULADORA 0.1</Text>
+          <Text style={[estilos.header, estilos.title]}>CALCULADORA 0.1</Text>
           <TextInput 
               style={estilos.input}
               onChangeText={(numero)=>setnumber1(numero)}
