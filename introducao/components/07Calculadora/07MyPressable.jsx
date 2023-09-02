@@ -2,7 +2,7 @@ import { View,Text, Pressable } from "react-native"
 
 const MyPressable = ({ funcao, titulo }) => {
     return (
-        <View>
+        <View style={{ paddingRight:10 }}>
             <Pressable
                 onPress={funcao}
                 style={
@@ -14,7 +14,7 @@ const MyPressable = ({ funcao, titulo }) => {
                     ]
                 }
                 >
-                <Text style={{ color: cor, fontWeight: "bold" }}>{titulo}</Text>
+                <Text style={{ color: "white", fontWeight: "bold" }}>{titulo}</Text>
             </Pressable>
         </View>
 

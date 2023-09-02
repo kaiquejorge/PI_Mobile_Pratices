@@ -49,7 +49,12 @@ const Calculadora = () => {
               <Button title="MULTI" onPress={multiplicar}/>
               <Button title="DIVID" onPress={dividir} />
           </View>
-          <MyPressable funcao={somar} titulo="SOMAR"/>
+          <View style={{ flexDirection: 'row', margin:10, justifyContent:"center"}}>
+          <MyPressable funcao={somar} titulo="SOMAR" style={{paddingRight:20}} />
+          <MyPressable funcao={subtrair} titulo="SUBTR" style={{paddingRight:20}} />
+          <MyPressable funcao={multiplicar} titulo="MULTI" style={{paddingRight:20}} /> 
+          <MyPressable funcao={dividir} titulo="DIVID"/>
+          </View>
           <Text style={[estilos.header, {marginTop:20}]}>
               Resultado: {result}
           </Text>
