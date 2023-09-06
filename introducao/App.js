@@ -7,14 +7,14 @@ import { StyleSheet, Text, View } from 'react-native';
 //import Questao01 from './components/tarefa01/Questao01';
 //mport Questao02 from './components/tarefa01/Questao02';
 //import JuntarFrases from './components/06JuntarFrases';
-import Calculadora from './components/07Calculadora/07Calculadora';
+//import Calculadora from './components/07Calculadora/07Calculadora';
+//import MyScrollView from './components/08MyScrollView';
+import MyFlatList from './components/09MyFlatList';
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Calculadora />
-    </View>
+    <MyFlatList />
   );
 }
 
