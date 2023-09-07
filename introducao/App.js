@@ -9,12 +9,12 @@ import { StyleSheet, Text, View } from 'react-native';
 //import JuntarFrases from './components/06JuntarFrases';
 //import Calculadora from './components/07Calculadora/07Calculadora';
 //import MyScrollView from './components/08MyScrollView';
-import MyFlatList from './components/09MyFlatList';
-
+//import MyFlatList from './components/09MyFlatList';
+import MySectionList from './components/10MySectionList';
 
 export default function App() {
   return (
-    <MyFlatList />
+    <MySectionList />
   );
 }
 

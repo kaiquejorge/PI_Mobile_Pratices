@@ -1,6 +1,6 @@
 import { View, Text, FlatList } from "react-native"
 
-const dados = [
+/* const dados = [
     {key:1, nome:"Kaique", nota:7.0 },
     {key:2, nome:"Jorge", nota:5.0 },
     {key:3, nome:"Lolo", nota:7.2 },
@@ -28,6 +28,13 @@ const dados = [
     {key:25, nome:"Jonna", nota:7.0 },
     {key:26, nome:"Nicki", nota:7.0 },
     {key:27, nome:"Joe", nota:7.0 },
+]*/
+
+const dados = [
+    {nome:"Fulano", nota:10},
+    {nome:"José", nota:5.5},
+    {nome:"Pluto", nota:6.0}
+
 ]
 
 const MyFlatList = () => {
@@ -53,6 +60,11 @@ const MyFlatList = () => {
                                 </Text>
                             </View>
                         )
+                    }
+                }
+                keyExtractor={
+                    (elemento)=>{
+                        return elemento.nome + elemento.nota
                     }
                 }
             />

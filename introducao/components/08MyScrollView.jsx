@@ -1,9 +1,9 @@
 import { View, Text, Image, ScrollView } from "react-native"
 
 const imagem = {
-    uri: "https://www.quixada.ufc.br/wp-content/uploads/2016/07/Diana-Medina-225x300.png",
-    width:225,
-    height:300
+    uri: "https://akamai.sscdn.co/uploadfile/letras/fotos/e/9/7/8/e978e0246803f2fbcde5a10c2cad2976.jpg",
+    width:706,
+    height:530
 }
 
 const MyScrollView = () => {
@@ -13,10 +13,15 @@ const MyScrollView = () => {
                 style={{
                     flex:1,
                     justifyContent:"flex-start",
-                    alignItems:"center"
+                    alignItems:"center",
+                    paddingTop:40
                 }}
             >
-                <image source={imagem}/>
+                <Text style={{fontSize:25, fontWeight:"bold"}}>TOVE LO</Text>
+                <Image source={imagem}/>
+                <Image source={imagem}/>
+                <Image source={imagem}/>
+                <Image source={imagem}/>
             </View>
         </ScrollView>
     )
