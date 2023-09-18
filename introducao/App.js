@@ -10,11 +10,13 @@ import { StyleSheet, Text, View } from 'react-native';
 //import Calculadora from './components/07Calculadora/07Calculadora';
 //import MyScrollView from './components/08MyScrollView';
 //import MyFlatList from './components/09MyFlatList';
-import MySectionList from './components/10MySectionList';
+//import MySectionList from './components/10MySectionList';
+//import Flexbox from './components/12FlexboxB';
+import MyNetworking from './components/13MyNetworking';
 
 export default function App() {
   return (
-    <MySectionList />
+    <MyNetworking />
   );
 }
 
