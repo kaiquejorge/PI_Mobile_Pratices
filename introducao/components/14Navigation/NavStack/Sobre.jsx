@@ -5,7 +5,7 @@ import { useState } from "react"
 
 const student = {nome: "Jefferson", nota: 6.7}
 
-const Screen03 = ({ navigation }) => {
+const Sobre = ({ navigation }) => {
     
     const [modalVisible, setModalVisible] = useState(false);
 
@@ -34,4 +34,4 @@ const Screen03 = ({ navigation }) => {
     )
 }
 
-export default Screen03
+export default Sobre

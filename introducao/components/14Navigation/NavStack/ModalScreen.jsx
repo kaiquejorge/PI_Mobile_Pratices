@@ -6,7 +6,7 @@ const ModalScreen = ({navigation}) => {
     return (
         <View style={styles.container}> 
             <Text style={styles.header}>Tela Modal</Text>
-            <Button title="Sair" onPress={() => navigation.goBack()} />
+            <Button title="HOME" onPress={() => navigation.navigate('MainNavApp')} />
         </View>
     )
 }
