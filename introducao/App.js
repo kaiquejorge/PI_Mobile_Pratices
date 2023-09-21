@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native';
+
 //import HelloRN from './components/01HelloRN';
 //import HelloRN2 from './components/02HelloRN2';
 //import Cat from './components/03FullName';
@@ -12,11 +13,12 @@ import { StyleSheet, Text, View } from 'react-native';
 //import MyFlatList from './components/09MyFlatList';
 //import MySectionList from './components/10MySectionList';
 //import Flexbox from './components/12FlexboxB';
-import MyNetworking from './components/13MyNetworking';
+//import MyNetworking from './components/13MyNetworking';
+import MainNavApp from './components/14Navigation/NavStack/MainNavApp';
 
 export default function App() {
   return (
-    <MyNetworking />
+    <MainNavApp/>
   );
 }
 
