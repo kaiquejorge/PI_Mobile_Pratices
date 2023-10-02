@@ -14,11 +14,12 @@ import { StyleSheet, Text, View } from 'react-native';
 //import MySectionList from './components/10MySectionList';
 //import Flexbox from './components/12FlexboxB';
 //import MyNetworking from './components/13MyNetworking';
-import MainNavApp from './components/14Navigation/NavStack/MainNavApp';
+//import MainNavApp from './components/14Navigation/NavStack/MainNavApp';
+import PokemonApp from './components/15Pokemon/PokemonApp'
 
 export default function App() {
   return (
-    <MainNavApp/>
+    <PokemonApp />
   );
 }
 
