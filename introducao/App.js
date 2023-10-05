@@ -15,11 +15,13 @@ import { StyleSheet, Text, View } from 'react-native';
 //import Flexbox from './components/12FlexboxB';
 //import MyNetworking from './components/13MyNetworking';
 //import MainNavApp from './components/14Navigation/NavStack/MainNavApp';
-import PokemonApp from './components/15Pokemon/PokemonApp'
+//import PokemonApp from './components/15Pokemon/PokemonApp'
+import ShoppingList from './components/AP1/Questao01';
+//import MyIconButton from './components/AP1/MyIconButtons';
 
 export default function App() {
   return (
-    <PokemonApp />
+    <ShoppingList />
   );
 }
 
